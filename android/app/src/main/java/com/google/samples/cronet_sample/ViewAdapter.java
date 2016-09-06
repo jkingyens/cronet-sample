@@ -176,8 +176,8 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewAdapter.ViewHolder> {
             // other information like QUIC server information, HTTP/2 protocol and QUIC protocol.
             cronetEngine = myBuilder
                     .enableHttpCache(CronetEngine.Builder.HTTP_CACHE_IN_MEMORY, 100 * 1024)
-                    .enableHTTP2(true)
-                    .enableQUIC(true)
+                    .enableHttp2(true)
+                    .enableQuic(true)
                     .build();
         }
         return cronetEngine;

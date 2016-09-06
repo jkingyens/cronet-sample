@@ -4,34 +4,6 @@ Cronet Sample
 [Cronet](https://chromium.googlesource.com/chromium/src/+/master/components/cronet?autodive=0%2F%2F)
 is Chromium's Networking stack packaged as a library. This sample app shows how to use the library.
 
-### Getting Started
----------------
-It's a manual procedure to get the Cronet library into a project. To add the libraries to the
-sample, please follow the following steps:
-
-1. Go to [Cronet releases website]
-          (https://console.cloud.google.com/storage/browser/chromium-cronet/android)
-and choose the latest release
-2. Navigate to chromium-cronet/android/releasenumber/Release/cronet
-3. Get .jar files
-4. Download cronet.jar, cronet_api.jar
-5. Directly under the "app" directory of your project, create a "libs" directory. Use a shell
-command if you like, or use "File|New|Directory" from the menu. But note that you only get
-"Directory" as an option if you are in "Project" view, not "Android" view.
-"Project" models the local machine's filesystem, but Android is a virtual layout of files
-corresponding to the deployed hierarchy.
-6. Copy cronet.jar and cronet_api.jar under the libs directory
-7. Select both files at once
-8. Bring up the context menu and choose "Add as Library"
-9. Confirm "OK" at the "Add to module" dialog
-10. Get .so files
-11. Download .so files, currently located
-[here](https://console.cloud.google.com/storage/browser/chromium-cronet/android/52.0.2708.0/Release/cronet/libs/)
-12. Under "app/src/main" create a directory named "jniLibs"
-13. Copy armeabi and ameabi-v7a into jniLibs, which should contain only subdirectories,
-not directly a '.so' file. If you typically use an emulator,
-copy x64_64 folder into jniLibs folder as well
-
 ### License
 ---------------
 
